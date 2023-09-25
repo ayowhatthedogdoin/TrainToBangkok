@@ -63,16 +63,38 @@ line = {
   "blackblueline" : {"blueline", "greenline", "yellowline"},
 }
 
-def main():
-    linenow = input()
-    stationnow = input()
-    linego = input()
-    stationgo = input()
-    linestore = [stationnow, stationgo]
-    
-    connectnow = line[stationnow]
-    connectgo = line[stationgo]
-    while len(connectnow - connectgo) == 0:
-        
-          
+def main(station_name):
+    if station_name in blue:
+        return "Blue"
+    elif station_name in lightblue:
+        return "Light Blue"
+    elif station_name in orange:
+        return "Orange"
+    elif station_name in littleyellow:
+        return "Little Yellow"
+    elif station_name in purple:
+        return "Purple"
+    elif station_name in leftred:
+        return "Left Red"
+    elif station_name in rightred:
+        return "Right Red"
+    elif station_name in green:
+        return "Green"
+    elif station_name in pink:
+        return "Pink"
+    elif station_name in yellow:
+        return "Yellow"
+    elif station_name in black:
+        return "Black"
+    else:
+        return "Station not found"
+
+# ตัวอย่างการใช้งาน
+user_selected_station = input("กรุณาใส่ชื่อสถานีที่คุณต้องการไป: ")
+selected_color = main(user_selected_station)
+if selected_color != "Station not found":
+    print("สถานี '{user_selected_station}' อยู่ในสายสี {selected_color}")
+else:
+    print("ไม่พบสถานีที่คุณระบุ")
+   
 main()
