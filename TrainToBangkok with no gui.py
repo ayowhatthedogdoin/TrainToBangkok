@@ -65,27 +65,27 @@ line = {
 
 def main(station_name):
     if station_name in blue:
-        return "Blue"
+        return "blue"
     elif station_name in lightblue:
-        return "Light Blue"
+        return "light Blue"
     elif station_name in orange:
-        return "Orange"
+        return "orange"
     elif station_name in littleyellow:
-        return "Little Yellow"
+        return "little Yellow"
     elif station_name in purple:
-        return "Purple"
+        return "purple"
     elif station_name in leftred:
-        return "Left Red"
+        return "left red"
     elif station_name in rightred:
-        return "Right Red"
+        return "right red"
     elif station_name in green:
-        return "Green"
+        return "green"
     elif station_name in pink:
-        return "Pink"
+        return "pink"
     elif station_name in yellow:
-        return "Yellow"
+        return "yellow"
     elif station_name in black:
-        return "Black"
+        return "black"
     else:
         return "Station not found"
 
