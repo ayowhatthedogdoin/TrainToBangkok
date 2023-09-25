@@ -1,8 +1,7 @@
 """traintobangkok"""
 
 blue = ["หลักสอง", "บางแค", "ภาษีเจริญ", "เพชรเกษม 48", ("บางหว้า สายน้ำเงิน", "บางหว้า สายฟ้า") \
-          , "บางไผ่", "ท่าพระ"]
-blueswap = ["จรัญฯ 13", "ไฟฉาย", "บางขุนนนท์", "บางยี่ขัน", "สิรินธร", "บางพลัด","บางอ้อ", "บางโพ", \
+          , "บางไผ่", "ท่าพระ", "จรัญฯ 13", "ไฟฉาย", "บางขุนนนท์", "บางยี่ขัน", "สิรินธร", "บางพลัด","บางอ้อ", "บางโพ", \
           ("เตาปูน สายน้ำเงิน", "เตาปูน สายม่วง"), ("บางซี่อ", "สถานีกลางกรุงเทพอภิวัฒน์ซ้าย", "สถานีกลางกรุงเทพอภิวัฒน์ขวา"), \
           "กำแพงเพชร", ("สวนจตุจักร", "หมอชิต"), ("พหลโยธิน", "ห้าแยกลาดพร้าว"), \
           ("ลาดพร้าว สายน้ำเงิน", "ลาดพร้าว สายเหลือง"), "รัชดาภิเษก", "สุทธิสาร", "ห้วยขวาง", "ศูนย์วัฒนธรรมแห่งประเทศไทย",\
@@ -49,3 +48,30 @@ yellow = [("ลาดพร้าว สายเหลือง", "ลาดพ
 
 black = [("พญาไทย สายดำ", "พญาไทย สายเขียว"), "ราชปรารภ", ("มักกะสัน", "เพชรบุรี"), "รามคำแหง", \
          ("หัวหมาก สายดำ", "หัวหมาก สายเหลือง"), "บ้านทับช้าง", "ลาดกระบัง", "สุวรรณภูมิ"]
+
+line = {
+  "blueline" : {"purpleline", "redline", "greenline", "lightblueline"},
+  "lightblueline" : {"blueline", "orangeline", "greenline"},
+  "orangeline" : {"lightblueline"},
+  "littleyellowline" : {"lightblueline"},
+  "purpleblueline" : {"pinkline", "leftredline", "blueline"},
+  "leftredblueline" : {"purpleline", "blueline"},
+  "rightredblueline" : {"pinkline", "blueline"},
+  "greenblueline" : {"pinkline", "blueline", "blackline", "lightblueline", "yellowline"},
+  "pinkblueline" : {"purpleline", "redline", "greenline"},
+  "yellowblueline" : {"blueline", "blackline", "greenline"},
+  "blackblueline" : {"greenline", "blueline", "yellowline"},
+}
+
+def main():
+    linenow = input()
+    stationnow = input()
+    linego = input()
+    stationgo = input()
+
+    connectnow = line[stationnow]
+    connectgo = line[stationgo]
+    while len(connectnow - connectgo) == 0:
+        if len(connectnow) > len(connectgo):
+            connectnow = sorted()
+main()
