@@ -68,11 +68,11 @@ def main():
     stationnow = input()
     linego = input()
     stationgo = input()
-
+    linestore = [stationnow, stationgo]
+    
     connectnow = line[stationnow]
     connectgo = line[stationgo]
     while len(connectnow - connectgo) == 0:
-        if len(connectnow) > len(connectgo):
+        
           
-
 main()
