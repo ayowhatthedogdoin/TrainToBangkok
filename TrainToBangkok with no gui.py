@@ -50,8 +50,8 @@ black = [("พญาไทย สายดำ", "พญาไทย สายเ
          ("หัวหมาก สายดำ", "หัวหมาก สายเหลือง"), "บ้านทับช้าง", "ลาดกระบัง", "สุวรรณภูมิ"]
 
 line = {
-  "blueline" : {"purpleline", "redline", "greenline", "lightblueline"},
-  "lightblueline" : {"blueline", "orangeline", "greenline"},
+  "blueline" : {"rightredline", "leftredline", "lightblueline", "purpleline", "greenline"},
+  "lightblueline" : {"blueline", "greenline", "orangeline"},
   "orangeline" : {"lightblueline"},
   "littleyellowline" : {"lightblueline"},
   "purpleblueline" : {"pinkline", "leftredline", "blueline"},
@@ -60,7 +60,7 @@ line = {
   "greenblueline" : {"pinkline", "blueline", "blackline", "lightblueline", "yellowline"},
   "pinkblueline" : {"purpleline", "redline", "greenline"},
   "yellowblueline" : {"blueline", "blackline", "greenline"},
-  "blackblueline" : {"greenline", "blueline", "yellowline"},
+  "blackblueline" : {"blueline", "greenline", "yellowline"},
 }
 
 def main():
@@ -73,5 +73,6 @@ def main():
     connectgo = line[stationgo]
     while len(connectnow - connectgo) == 0:
         if len(connectnow) > len(connectgo):
-            connectnow = sorted()
+          
+
 main()
