@@ -23,15 +23,18 @@ def find_colorline(currentline, wantline, line):
     crossline = [((currentline).lower()+"line"), (wantline).lower()+"line"]
     currentline = line[(currentline).lower()+"line"]
     wantline = line[(wantline).lower()+"line"]
-    while len(currentline - wantline) == 0:
-        commute = []
-        for i in currentline:
-          if line[i] - 
+    total = -1
+    while len(currentline & wantline) == 0:
+      crossline.insert(-1, (f"{''.join(wantline)}"))
+      wantline = line[(f"{''.join(wantline)}")]
+      total -= 1
+    for i in (currentline & wantline):
+      crossline.insert(total, i)
+    return crossline
 
 #รับ input มาทดลองโปรแกรม
 currentstation = input()
 wantstation = input()
 currentline = information.loc[currentstation]["Colorline"]
 wantline = information.loc[wantstation]["Colorline"]
-
-find_colorline(currentline, wantline, line)
+crossline = find_colorline(currentline, wantline, line)
