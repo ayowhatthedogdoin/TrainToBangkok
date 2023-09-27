@@ -51,10 +51,6 @@ ul li.active a{
     height: auto;
 }
 
-.main{
-    max-width: 1200px;
-    margin: auto;
-}
 
 .btn{
     display: inline-block;
