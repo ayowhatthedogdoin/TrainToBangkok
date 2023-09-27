@@ -1,0 +1,208 @@
+﻿Station ID,Station,Colorline,Swap to
+B1,หลักสอง,Blue,Cant
+B2,บางแค,Blue,Cant
+B3,ภาษีเจริญ,Blue,Cant
+B4,เพชรเกษม 48,Blue,Cant
+B5,บางหว้า,Blue,LB1
+B6,บางไผ่,Blue,Cant
+B7,ท่าพระ,Blue,Cant
+B8,จรัญฯ 13,Blue,Cant
+B9,ไฟฉาย,Blue,Cant
+B10,บางขุนนนท์,Blue,Cant
+B11,บางยี่ขัน,Blue,Cant
+B12,สิรินธร,Blue,Cant
+B13,บางพลัด,Blue,Cant
+B14,บางอ้อ,Blue,Cant
+B15,บางโพ,Blue,Cant
+B16,เตาปูน,Blue,PU16
+B17,บางซี่อ,Blue,R6
+B18,กำแพงเพชร,Blue,Cant
+B19,สวนจตุจักร,Blue,G17
+B20,พหลโยธิน,Blue,G16
+B21,ลาดพร้าว,Blue,Y1
+B22,รัชดาภิเษก,Blue,Cant
+B23,สุทธิสาร,Blue,Cant
+B24,ห้วยขวาง,Blue,Cant
+B25,ศูนย์วัฒนธรรมแห่งประเทศไทย,Blue,Cant
+B26,พระราม 9,Blue,Cant
+B27,เพชรบุรี,Blue,BL3
+B28,สุขุมวิท,Blue,Cant
+B29,พร้อมพงษ์,Blue,G29
+B30,ศูนย์ประชุมแห่งชาติสิริกิติ์,Blue,Cant
+B31,คลองเตย,Blue,Cant
+B32,ลุมพินี,Blue,Cant
+B33,สีลม,Blue,LB11
+B34,สามย่าน,Blue,Cant
+B35,หัวลำโพง,Blue,Cant
+B36,วัดมังกร,Blue,Cant
+B37,สามยอด,Blue,Cant
+B38,สนามไชย,Blue,Cant
+B39,อิสรภาพ,Blue,Cant
+LB1,บางหว้า,Lightblue,B5
+LB2,วุฒากาศ,Lightblue,Cant
+LB3,ตลาดพลู,Lightblue,LY1
+LB4,โพธิ์นิมิตร,Lightblue,Cant
+LB5,วงเวียนใหญ่,Lightblue,Cant
+LB6,กรุงธนบุรี,Lightblue,O3
+LB7,สะพานตากสิน,Lightblue,Cant
+LB8,สุรศักดิ์,Lightblue,Cant
+LB9,เซนต์หลุยส์,Lightblue,Cant
+LB10,ช่องนนทรี,Lightblue,LY12
+LB11,ศาลาแดง,Lightblue,B33
+LB12,ราชดำริ,Lightblue,Cant
+LB13,สยาม,Lightblue,G25
+LB14,สนามกีฬาแห่งชาติ,Lightblue,Cant
+O1,คลองสาน,Orange,Cant
+O2,เจริญนคร,Orange,Cant
+O3,กรุงธนบุรี,Orange,LB6
+LY1,ราชพฤกษ์,Littleyellow,LB3
+LY2,สะพานพระราม 3,Littleyellow,Cant
+LY3,เจริญราษฎร์,Littleyellow,Cant
+LY4,สะพานพระราม 9,Littleyellow,Cant
+LY5,วัดดอกไม้,Littleyellow,Cant
+LY6,วัดปริวาส,Littleyellow,Cant
+LY7,วัดด่าน,Littleyellow,Cant
+LY8,นราราม 3,Littleyellow,Cant
+LY9,ถนนจันทน์,Littleyellow,Cant
+LY10,เทคนิคกรุงเทพ,Littleyellow,Cant
+LY11,อาคารสงเคราะห์,Littleyellow,Cant
+LY12,สาทร,Littleyellow,LB10
+PU1,คลองบางไผ่,Purple,Cant
+PU2,ตลาดบางใหญ่,Purple,Cant
+PU3,สามแยกบางใหญ่,Purple,Cant
+PU4,บางพลู,Purple,Cant
+PU5,บางรักใหญ่,Purple,Cant
+PU6,บางรักน้อยท่าอิฐ,Purple,Cant
+PU7,ไทรม้า,Purple,Cant
+PU8,สะพานพระนั่งเหล้า,Purple,Cant
+PU9,แยกนนทบุรี 1,Purple,Cant
+PU10,บางกระสอ,Purple,Cant
+PU11,ศูนย์ราชการนนทบุรี,Purple,PI1
+PU12,กระทรวงสาธารณสุข,Purple,Cant
+PU13,แยกติวานนท์,Purple,Cant
+PU14,วงศ์สว่าง,Purple,Cant
+PU15,บางซ่อน,Purple,LR5
+PU16,เตาปูน,Purple,B16
+R1,ตลิ่งชัน,Red,Cant
+R2,บางบำหรุ,Red,Cant
+R3,บางกรวย,Red,Cant
+R4,สะพานพระราม 6,Red,Cant
+R5,บางซ่อน,Red,PU15
+R6,สถานีกลางกรุงเทพอภิวัฒน์,Red,B17
+R7,จตุจักร,Red,Cant
+R8,วัดเสมียนนารี,Red,Cant
+R9,บางเขน,Red,Cant
+R10,ทุ่งสองห้อง,Red,Cant
+R11,หลักสี่,Red,PI13
+R12,การเคหะฯ,Red,Cant
+R13,ดอนเมือง,Red,Cant
+R14,หลักหก,Red,Cant
+R15,รังสิต,Red,Cant
+G1,คูคต,Green,Cant
+G2,แยก คปอ,Green,Cant
+G3,พิพิธภัณฑ์กองทัพอากาศ,Green,Cant
+G4,โรงพยาบาลภูมิพลอดุลยเดช,Green,Cant
+G5,สะพานใหม่,Green,Cant
+G6,สายหยุด,Green,Cant
+G7,พหลโยธิน 59,Green,Cant
+G8,วัดพระศรีมหาธาตุ,Green,PI15
+G9,กรมทหารราบที่ 11,Green,Cant
+G10,บางบัว,Green,Cant
+G11,กรมป่าไม้,Green,Cant
+G12,มหาวิทยาลัยเกษตรศาสตร์,Green,Cant
+G13,เสนานิคม,Green,Cant
+G14,รัชโยธิน,Green,Cant
+G15,พหลโยธิน 24,Green,Cant
+G16,ห้าแยกลาดพร้าว,Green,B20
+G17,หมอชิต,Green,B19
+G18,สะพานควาย,Green,Cant
+G19,เสนาร่วม,Green,Cant
+G20,อารีย์,Green,Cant
+G21,สนามเป้า,Green,Cant
+G22,อนุสาวรีย์ชัยสมรภูมิ,Green,Cant
+G23,พญาไท,Green,BL1
+G24,ราชเทวี,Green,Cant
+G25,สยาม,Green,LB13
+G26,ชิดลม,Green,Cant
+G27,เพลินจิต,Green,Cant
+G28,นานา,Green,Cant
+G29,อโศก,Green,B29
+G30,พร้อมพงษ์,Green,Cant
+G31,ทองหล่อ,Green,Cant
+G32,เอกมัย,Green,Cant
+G33,พระโขนง,Green,Cant
+G34,อ่อนนุช,Green,Cant
+G35,บางจาก,Green,Cant
+G36,ปุณณวิถี,Green,Cant
+G37,อุดมสุข,Green,Cant
+G38,บางนา,Green,Cant
+G39,แบริ่ง,Green,Cant
+G40,สำโรง,Green,Y23
+G41,ปู่เจ้า,Green,Cant
+G42,ช้างเอราวัณ,Green,Cant
+G43,โรงเรียนนายเรือ,Green,Cant
+G44,ปากน้ำ,Green,Cant
+G45,ศรีนครินทร์,Green,Cant
+G46,แพรกษา,Green,Cant
+G47,สายลวด,Green,Cant
+G48,เคหะฯ,Green,Cant
+PI1,ศูนย์ราชการนนทบุรี,Pink,PU11
+PI2,แคราย,Pink,Cant
+PI3,สนามบินน้ำ,Pink,Cant
+PI4,สามัคคี,Pink,Cant
+PI5,กรมชลประทาน,Pink,Cant
+PI6,แยกปากเกร็ด,Pink,Cant
+PI7,เลี่ยงเมืองปากเกร็ด,Pink,Cant
+PI8,แจ้งวัฒนะปากเกร็ด 28,Pink,Cant
+PI9,เมืองทองธานี,Pink,Cant
+PI10,แจ้งวัฒนะ 14,Pink,Cant
+PI11,ศูนย์ราชการเฉลิมพระเกียรติ,Pink,Cant
+PI12,โทรคมนาคม,Pink,Cant
+PI13,หลักสี่,Pink,RR6
+PI14,ราชภัฎพระนครเหนือ,Pink,Cant
+PI15,วัดพระศรีมหาธาตุ,Pink,G8
+PI16,รามอินทรา 3,Pink,Cant
+PI17,ลาดปลาเค้า,Pink,Cant
+PI18,รามอินทรา กม.4,Pink,Cant
+PI19,มัยลาภ,Pink,Cant
+PI20,วัชรพล,Pink,Cant
+PI21,รามอินทรา กม.6,Pink,Cant
+PI22,คู้บอน,Pink,Cant
+PI23,รามอินทรา กม.9,Pink,Cant
+PI24,วงแหวนรามอินทรา,Pink,Cant
+PI25,นพรัตน์,Pink,Cant
+PI26,บางชัน,Pink,Cant
+PI27,เศรษบุตรบำเพ็ญ,Pink,Cant
+PI28,ตลาดมีนบุรี,Pink,Cant
+PI29,มีนบุรี,Pink,Cant
+Y1,ลาดพร้าว,Yellow,B21
+Y2,ภาวนา,Yellow,Cant
+Y3,โชคชัย 4,Yellow,Cant
+Y4,ลาดพร้าว 71,Yellow,Cant
+Y5,บาดพร้าว 83,Yellow,Cant
+Y6,มหาดไทย,Yellow,Cant
+Y7,ลาดพร้าว 101,Yellow,Cant
+Y8,บางกะปิ,Yellow,Cant
+Y9,แยกลำสาลี,Yellow,Cant
+Y10,ศรีกรีฑา,Yellow,Cant
+Y11,หัวหมาก,Yellow,BL5
+Y12,กลันตัน,Yellow,Cant
+Y13,ศรีนุช,Yellow,Cant
+Y14,ศรีนครินทร์ 38,Yellow,Cant
+Y15,สวนหลวง ร.9,Yellow,Cant
+Y16,ศรีอุดม,Yellow,Cant
+Y17,ศรีเอี่ยม,Yellow,Cant
+Y18,ศรีลาซาล,Yellow,Cant
+Y19,ศรีแบริ่ง,Yellow,Cant
+Y20,ศรีด่าน,Yellow,Cant
+Y21,ศรีเทพา,Yellow,Cant
+Y22,ทัพวัล,Yellow,Cant
+Y23,สำโรง,Yellow,G40
+BL1,พญาไท,Black,G23
+BL2,ราชปรารภ,Black,Cant
+BL3,มักกะสัน,Black,B27
+BL4,รามคำแหง,Black,Cant
+BL5,หัวหมาก,Black,Y11
+BL6,บ้านทับช้าง,Black,Cant
+BL7,ลาดกระบัง,Black,Cant
+BL8,สุวรรณภูมิ,Black,Cant
