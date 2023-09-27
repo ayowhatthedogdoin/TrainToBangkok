@@ -28,8 +28,9 @@ def find_colorline(currentline, wantline, line):
       crossline.insert(-1, (f"{''.join(wantline)}"))
       wantline = line[(f"{''.join(wantline)}")]
       total -= 1
-    for i in (currentline & wantline):
-      crossline.insert(total, i)
+    if not crossline[-1] in currentline:
+      for i in (currentline & wantline):
+        crossline.insert(total, i)
     return crossline
 
 #รับ input มาทดลองโปรแกรม
@@ -38,3 +39,4 @@ wantstation = input()
 currentline = information.loc[currentstation]["Colorline"]
 wantline = information.loc[wantstation]["Colorline"]
 crossline = find_colorline(currentline, wantline, line)
+print(crossline)
