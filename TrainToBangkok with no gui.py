@@ -34,7 +34,6 @@ line_connections = {
     "Yellow": {"Blue", "Black", "Green"},
     "Black": {"Blue", "Green", "Yellow"},
 }
-
 # สร้างดิกชันนารีสำหรับเก็บสถานีที่ต้องการเปลี่ยนสาย
 lines = {
     "Blue": "B5",
@@ -54,3 +53,24 @@ start_station = input("ป้อนสถานีต้นทาง: ")
 end_station = input("ป้อนสถานีปลายทาง: ")
 
 find_route(start_station, end_station, lines, line_connections)
+
+def find_colorline(currentline, wantline, line):
+    #ใช้หาว่ารถไฟต้องผ่านสายไหนบ้าง
+    crossline = [((currentline).lower()+"line"), (wantline).lower()+"line"]
+    currentline = line[(currentline).lower()+"line"]
+    wantline = line[(wantline).lower()+"line"]
+    total = -1
+    while len(currentline & wantline) == 0:
+      crossline.insert(-1, (f"{''.join(wantline)}"))
+      wantline = line[(f"{''.join(wantline)}")]
+      total -= 1
+    for i in (currentline & wantline):
+      crossline.insert(total, i)
+    return crossline
+
+#รับ input มาทดลองโปรแกรม
+currentstation = input()
+wantstation = input()
+currentline = information.loc[currentstation]["Colorline"]
+wantline = information.loc[wantstation]["Colorline"]
+crossline = find_colorline(currentline, wantline, line_connections)
