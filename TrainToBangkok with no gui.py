@@ -14,6 +14,7 @@ def startstop(currentstation, word):
     checkline = (stationnow.split())[0] #ใช้สร้างตัวเชคสีสาย
     checknum = (stationnow.split())[1]
 
+    print(stationnow)
     start = {}
     tod = ""     
     for i in linecan:
@@ -33,8 +34,8 @@ def setupstation(currentstation, wantstation):
         ConnectStationData.connect["start"] = ConnectStationData.connect.pop[information.loc[currentstation]["Station ID"]]
         ConnectStationData.connect["end"] = ConnectStationData.connect.pop[information.loc[wantstation]["Station ID"]]
     else:
-        startstop(information.loc[currentstation]["Station ID"], "start")
-        startstop(information.loc[wantstation]["Station ID"], "end")
+        startstop(currentstation, "start")
+        startstop(wantstation, "end")
 
 #หาเส้นทางที่สั้นที่สุดจากสถานีที่เป็นจุดเชื่อมต่างๆ
 def shortestpath(currentstation, wantstation):
@@ -47,5 +48,5 @@ def main():
     currentstation = input("ตอนนี้คุณอยู่ที่สถานี : ")
     wantstation = input("คุณอยากไปที่สถานี : ")
     setupstation(currentstation, wantstation)
-
+    print(ConnectStationData.connect.keys())
 main()
