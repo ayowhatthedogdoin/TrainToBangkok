@@ -48,5 +48,7 @@ def main():
     currentstation = input("ตอนนี้คุณอยู่ที่สถานี : ")
     wantstation = input("คุณอยากไปที่สถานี : ")
     setupstation(currentstation, wantstation)
+    for i in range(len(ConnectStationData)):
+        numberstation = 0
     print(ConnectStationData.connect.keys())
 main()
