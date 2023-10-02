@@ -1,0 +1,188 @@
+﻿Station ID,Station,Colorline
+BLUE 1,หลักสอง,blue
+BLUE 2,บางแค,blue
+BLUE 3,ภาษีเจริญ,blue
+BLUE 4,เพชรเกษม 48,blue
+"BLUE 5,LIGHTB 1",บางหว้า,"blue,lightblue"
+BLUE 6,บางไผ่,blue
+BLUE 7,ท่าพระ,blue
+BLUE 8,จรัญฯ 13,blue
+BLUE 9,ไฟฉาย,blue
+BLUE 10,บางขุนนนท์,blue
+BLUE 11,บางยี่ขัน,blue
+BLUE 12,สิรินธร,blue
+BLUE 13,บางพลัด,blue
+BLUE 14,บางอ้อ,blue
+BLUE 15,บางโพ,blue
+"BLUE 16,PURPLE 16",เตาปูน,"blue,purple"
+"BLUE 17,RED 6","บางซี่อ,สถานีกลางกรุงเทพอภิวัฒน์","blue,red"
+BLUE 18,กำแพงเพชร,blue
+BLUE 19,สวนจตุจักร,blue
+"BLUE 20,GREEN 16","พหลโยธิน,ห้าแยกลาดพร้าว","blue,green"
+"BLUE 21,YELLOW 1",ลาดพร้าว,"blue,yellow"
+BLUE 22,รัชดาภิเษก,blue
+BLUE 23,สุทธิสาร,blue
+BLUE 24,ห้วยขวาง,blue
+BLUE 25,ศูนย์วัฒนธรรมแห่งประเทศไทย,blue
+BLUE 26,พระราม 9,blue
+"BLUE 27,BLACK 3","เพชรบุรี,มักกะสัน","blue,black"
+"BLUE 28,GREEN 29","สุขุมวิท,อโศก","blue,green"
+BLUE 29,ศูนย์ประชุมแห่งชาติสิริกิติ์,blue
+BLUE 30,คลองเตย,blue
+BLUE 31,ลุมพินี,blue
+"BLUE 32,LIGHTB 11","สีลม,ศาลาแดง","blue,lightblue"
+BLUE 33,สามย่าน,blue
+BLUE 34,หัวลำโพง,blue
+BLUE 35,วัดมังกร,blue
+BLUE 36,สามยอด,blue
+BLUE 37,สนามไชย,blue
+BLUE 38,อิสรภาพ,blue
+LIGHTB 2,วุฒากาศ,lightblue
+"LIGHTB 3,LITTLEY 1","ตลาดพลู,ราชพฤกษ์",lightblue.littleyellow
+LIGHTB 4,โพธิ์นิมิตร,lightblue
+LIGHTB 5,วงเวียนใหญ่,lightblue
+"LIGHTB 6,ORANGE 3",กรุงธนบุรี,"lightblue,orange"
+LIGHTB 7,สะพานตากสิน,lightblue
+LIGHTB 8,สุรศักดิ์,lightblue
+LIGHTB 9,เซนต์หลุยส์,lightblue
+"LIGHTB 10,LITTLEY 12","ช่องนนทรี,สาทร","lightblue,littleyellow"
+LIGHTB 12,ราชดำริ,lightblue
+"LIGHTB 13,GREEN 25",สยาม,"lightblue,green"
+LIGHTB 14,สนามกีฬาแห่งชาติ,lightblue
+ORANGE 1,คลองสาน,orange
+ORANGE 2,เจริญนคร,orange
+LITTLEY 2,สะพานพระราม 3,littleyellow
+LITTLEY 3,เจริญราษฎร์,littleyellow
+LITTLEY 4,สะพานพระราม 9,littleyellow
+LITTLEY 5,วัดดอกไม้,littleyellow
+LITTLEY 6,วัดปริวาส,littleyellow
+LITTLEY 7,วัดด่าน,littleyellow
+LITTLEY 8,นราราม 3,littleyellow
+LITTLEY 9,ถนนจันทน์,littleyellow
+LITTLEY 10,เทคนิคกรุงเทพ,littleyellow
+LITTLEY 11,อาคารสงเคราะห์,littleyellow
+PURPLE 1,คลองบางไผ่,purple
+PURPLE 2,ตลาดบางใหญ่,purple
+PURPLE 3,สามแยกบางใหญ่,purple
+PURPLE 4,บางพลู,purple
+PURPLE 5,บางรักใหญ่,purple
+PURPLE 6,บางรักน้อยท่าอิฐ,purple
+PURPLE 7,ไทรม้า,purple
+PURPLE 8,สะพานพระนั่งเหล้า,purple
+PURPLE 9,แยกนนทบุรี 1,purple
+PURPLE 10,บางกระสอ,purple
+"PURPLE 11,PINK 1",ศูนย์ราชการนนทบุรี,"purple,pink"
+PURPLE 12,กระทรวงสาธารณสุข,purple
+PURPLE 13,แยกติวานนท์,purple
+PURPLE 14,วงศ์สว่าง,purple
+"PURPLE 15,RED5",บางซ่อน,"purple,red"
+RED 1,ตลิ่งชัน,red
+RED 2,บางบำหรุ,red
+RED 3,บางกรวย,red
+RED 4,สะพานพระราม 6,red
+RED 7,จตุจักร,red
+RED 8,วัดเสมียนนารี,red
+RED 9,บางเขน,red
+RED 10,ทุ่งสองห้อง,red
+"RED 11,PINK 13",หลักสี่,"red,pink"
+RED 12,การเคหะฯ,red
+RED 13,ดอนเมือง,red
+RED 14,หลักหก,red
+RED 15,รังสิต,red
+GREEN 1,คูคต,green
+GREEN 2,แยก คปอ,green
+GREEN 3,พิพิธภัณฑ์กองทัพอากาศ,green
+GREEN 4,โรงพยาบาลภูมิพลอดุลยเดช,green
+GREEN 5,สะพานใหม่,green
+GREEN 6,สายหยุด,green
+GREEN 7,พหลโยธิน 59,green
+"GREEN 8,PINK 15",วัดพระศรีมหาธาตุ,"green,pink"
+GREEN 9,กรมทหารราบที่ 11,green
+GREEN 10,บางบัว,green
+GREEN 11,กรมป่าไม้,green
+GREEN 12,มหาวิทยาลัยเกษตรศาสตร์,green
+GREEN 13,เสนานิคม,green
+GREEN 14,รัชโยธิน,green
+GREEN 15,พหลโยธิน 24,green
+GREEN 17,หมอชิต,green
+GREEN 18,สะพานควาย,green
+GREEN 19,เสนาร่วม,green
+GREEN 20,อารีย์,green
+GREEN 21,สนามเป้า,green
+GREEN 22,อนุสาวรีย์ชัยสมรภูมิ,green
+"GREEN 23,BLACK 1",พญาไท,"green,black"
+GREEN 24,ราชเทวี,green
+GREEN 26,ชิดลม,green
+GREEN 27,เพลินจิต,green
+GREEN 28,นานา,green
+GREEN 30,พร้อมพงษ์,green
+GREEN 31,ทองหล่อ,green
+GREEN 32,เอกมัย,green
+GREEN 33,พระโขนง,green
+GREEN 34,อ่อนนุช,green
+GREEN 35,บางจาก,green
+GREEN 36,ปุณณวิถี,green
+GREEN 37,อุดมสุข,green
+GREEN 38,บางนา,green
+GREEN 39,แบริ่ง,green
+"GREEN 40,YELLOW 23",สำโรง,"green,yellow"
+GREEN 41,ปู่เจ้า,green
+GREEN 42,ช้างเอราวัณ,green
+GREEN 43,โรงเรียนนายเรือ,green
+GREEN 44,ปากน้ำ,green
+GREEN 45,ศรีนครินทร์,green
+GREEN 46,แพรกษา,green
+GREEN 47,สายลวด,green
+GREEN 48,เคหะฯ,green
+PINK 2,แคราย,pink
+PINK 3,สนามบินน้ำ,pink
+PINK 4,สามัคคี,pink
+PINK 5,กรมชลประทาน,pink
+PINK 6,แยกปากเกร็ด,pink
+PINK 7,เลี่ยงเมืองปากเกร็ด,pink
+PINK 8,แจ้งวัฒนะปากเกร็ด 28,pink
+PINK 9,เมืองทองธานี,pink
+PINK 10,แจ้งวัฒนะ 14,pink
+PINK 11,ศูนย์ราชการเฉลิมพระเกียรติ,pink
+PINK 12,โทรคมนาคม,pink
+PINK 14,ราชภัฎพระนครเหนือ,pink
+PINK 16,รามอินทรา 3,pink
+PINK 17,ลาดปลาเค้า,pink
+PINK 18,รามอินทรา กม.4,pink
+PINK 19,มัยลาภ,pink
+PINK 20,วัชรพล,pink
+PINK 21,รามอินทรา กม.6,pink
+PINK 22,คู้บอน,pink
+PINK 23,รามอินทรา กม.9,pink
+PINK 24,วงแหวนรามอินทรา,pink
+PINK 25,นพรัตน์,pink
+PINK 26,บางชัน,pink
+PINK 27,เศรษบุตรบำเพ็ญ,pink
+PINK 28,ตลาดมีนบุรี,pink
+PINK 29,มีนบุรี,pink
+YELLOW 2,ภาวนา,yellow
+YELLOW 3,โชคชัย 4,yellow
+YELLOW 4,ลาดพร้าว 71,yellow
+YELLOW 5,บาดพร้าว 83,yellow
+YELLOW 6,มหาดไทย,yellow
+YELLOW 7,ลาดพร้าว 101,yellow
+YELLOW 8,บางกะปิ,yellow
+YELLOW 9,แยกลำสาลี,yellow
+YELLOW 10,ศรีกรีฑา,yellow
+"YELLOW 11,BLACK 5",หัวหมาก,"yellow,black"
+YELLOW 12,กลันตัน,yellow
+YELLOW 13,ศรีนุช,yellow
+YELLOW 14,ศรีนครินทร์ 38,yellow
+YELLOW 15,สวนหลวง ร.9,yellow
+YELLOW 16,ศรีอุดม,yellow
+YELLOW 17,ศรีเอี่ยม,yellow
+YELLOW 18,ศรีลาซาล,yellow
+YELLOW 19,ศรีแบริ่ง,yellow
+YELLOW 20,ศรีด่าน,yellow
+YELLOW 21,ศรีเทพา,yellow
+YELLOW 22,ทัพวัล,yellow
+BLACK 2,ราชปรารภ,black
+BLACK 4,รามคำแหง,black
+BLACK 6,บ้านทับช้าง,black
+BLACK 7,ลาดกระบัง,black
+BLACK 8,สุวรรณภูมิ,black
