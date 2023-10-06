@@ -16,7 +16,7 @@ connect = {
     },
 
     "BLUE 20,GREEN 16" : {
-        "BLACK 21,YELLOW 1" : 1,
+        "BLUE 21,YELLOW 1" : 1,
         "GREEN 8,PINK 15" : 8,
         "BLUE 17,RED 6" : 3,
         "GREEN 23,BLACK 1" : 7,
@@ -50,17 +50,17 @@ connect = {
 
     "YELLOW 11,BLACK 5": {
         "BLUE 27,BLACK 3" : 2,
-        "BLACK 21,YELLOW 1" : 10,
+        "BLUE 21,YELLOW 1" : 10,
         "GREEN 40,YELLOW 23" : 12
     },
 
     "BLUE 21,YELLOW 1": {
         "BLUE 20,GREEN 16" : 1,
-        "BL 5,YELLOW 11" : 10
+        "YELLOW 11,BLACK 5" : 10
     },
 
     "BLUE 5,LIGHTB 1": {
-        "BLUE 16,PURPLE 16" : 1,
+        "BLUE 16,PURPLE 16" : 11,
         "BLUE 32,LIGHTB 11" : 9,
         "LIGHTB 3,LITTLEY 1" : 2
     },
@@ -98,8 +98,8 @@ connect = {
 
     "LIGHTB 10,LITTLEY 12": {
         "LIGHTB 6,ORANGE 3" : 4,
-        "LIGHTB 4,LITTLEY 1" : 11,
-        "BLUEB 33,LIGHTB 11" : 1
+        "LIGHTB 3,LITTLEY 1" : 11,
+        "BLUE 32,LIGHTB 11" : 1
     },
 
     "PURPLE 15,RED 5" : {
