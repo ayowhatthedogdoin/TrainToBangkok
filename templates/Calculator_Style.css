@@ -55,6 +55,11 @@ body{
     height: auto;
 }
 
+.wrapper h1{
+  color: #fff;
+  text-align: center;
+}
+
 ::selection{
   color: #fff;
   background: #4285f4;
@@ -137,7 +142,7 @@ body{
   border-radius: 25px;
 }
 .options::-webkit-scrollbar-thumb{
-  background: #ccc;
+  background: #000000;
   border-radius: 25px;
 }
 .options::-webkit-scrollbar-thumb:hover{
@@ -149,6 +154,8 @@ body{
   font-size: 21px;
 }
 .options li:hover, li.selected{
+  color: #ffffff;
   border-radius: 5px;
-  background: #f2f2f2;
+  background: rgba(255, 0, 0, 0.931);
+  transition: 0.6s ease;
 }
