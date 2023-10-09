@@ -32,8 +32,12 @@ def startstop(currentstation, word):
 
 #ใช้หาสถานีตอนนี้
 def setupstation(station, word):
-    startstop(station, word)
-    stationpathstorage.shortest.update({word:[0, word]})
+    if word == "start":
+        startstop(station, word)
+        stationpathstorage.shortest.update({word:[0, word]})
+    else:
+        startstop(station, word)
+        stationpathstorage.shortest.update({word : [inf, ""]})
 
 def forsort(key):
     if key == "start":
@@ -81,4 +85,3 @@ def main():
     shortestpath(start)
     print(stationpathstorage.shortest)
 main()
-
