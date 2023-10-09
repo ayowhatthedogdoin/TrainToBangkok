@@ -2,7 +2,6 @@
 import pandas as pd
 from Data import ConnectStationData, stationpathstorage, Connectline
 from math import inf
-import time
 
 #เก็บข้อมูล
 information = pd.read_csv("Data\TrainToBangkokDATA.csv", index_col="Station")
@@ -69,21 +68,31 @@ def shortestpath(start):
         else:
             check = tocheck.pop(0)
         
+#ใช้หาทางไปที่สถานี
+def findpath(start, end):
+    check = end
+    passstation = list()
+    while check != start:
+        passstation.append(check)
+        check = stationpathstorage.shortest[check][1]
+    passstation.append(start)
+    passstation = passstation[::-1]
+    print(passstation)
 
 #เชื่อมต่อ function ต่างๆเข้าด้วยกัน
 def main():
     currentstation = input("ตอนนี้คุณอยู่ที่สถานี : ")
     wantstation = input("คุณอยากไปที่สถานี : ")
+    start = "start"
+    end = "end"
     if "," in information.loc[currentstation]["Station ID"]:
         start = information.loc[currentstation]["Station ID"]
     if "," in information.loc[wantstation]["Station ID"]:
         setupstation(currentstation, "start")
-        start = "start"
+        end = information.loc[wantstation]["Station ID"]
     else:
         setupstation(currentstation, "start")
         setupstation(wantstation, "end")
-        start = "start"
     shortestpath(start)
-    print(stationpathstorage.shortest)
-    print(time.process_time())
+    findpath(start, end)
 main()
