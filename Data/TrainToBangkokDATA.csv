@@ -38,7 +38,7 @@ BLUE 36,สามยอด,blue
 BLUE 37,สนามไชย,blue
 BLUE 38,อิสรภาพ,blue
 LIGHTB 2,วุฒากาศ,lightblue
-"LIGHTB 3,LITTLEY 1","ตลาดพลู,ราชพฤกษ์",lightblue.littleyellow
+"LIGHTB 3,LITTLEY 1","ตลาดพลู,ราชพฤกษ์","lightblue,littleyellow"
 LIGHTB 4,โพธิ์นิมิตร,lightblue
 LIGHTB 5,วงเวียนใหญ่,lightblue
 "LIGHTB 6,ORANGE 3",กรุงธนบุรี,"lightblue,orange"
@@ -75,7 +75,7 @@ PURPLE 10,บางกระสอ,purple
 PURPLE 12,กระทรวงสาธารณสุข,purple
 PURPLE 13,แยกติวานนท์,purple
 PURPLE 14,วงศ์สว่าง,purple
-"PURPLE 15,RED5",บางซ่อน,"purple,red"
+"PURPLE 15,RED 5",บางซ่อน,"purple,red"
 RED 1,ตลิ่งชัน,red
 RED 2,บางบำหรุ,red
 RED 3,บางกรวย,red
