@@ -49,21 +49,21 @@ def forsort(key):
 
 #หาเส้นทางที่สั้นที่สุดจากสถานีที่เป็นจุดเชื่อมต่างๆ
 def shortestpath(start):
-    allconnect = list(ConnectStationData.connect)
-    already = list()
+    already = set()
     check = start
     tocheck = list()
     while True:
+        storage = stationpathstorage.shortest
         base = stationpathstorage.shortest[check][0]
         nextcheck = list(ConnectStationData.connect[check].keys())
-        checknow = [i for i in ConnectStationData.connect[check] if i not in already and i not in tocheck]
+        checknow = [i for i in ConnectStationData.connect[check]]
         tocheck.extend(checknow)
         for i in nextcheck:
                 if (ConnectStationData.connect[check][i] + base) < stationpathstorage.shortest[i][0]:
                     stationpathstorage.shortest[i][0] = (ConnectStationData.connect[check][i]) + base
                     stationpathstorage.shortest[i][1] = check
-        already.append(allconnect.pop(allconnect.index(check)))
-        if len(tocheck) == 0 and len(allconnect) == 0:
+        already.add(check)
+        if stationpathstorage.shortest == storage and len(already) == 21:
             break
         else:
             check = tocheck.pop(0)
