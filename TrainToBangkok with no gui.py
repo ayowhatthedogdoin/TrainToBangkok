@@ -2,6 +2,7 @@
 import pandas as pd
 from Data import ConnectStationData, stationpathstorage, Connectline
 from math import inf
+import time
 
 #เก็บข้อมูล
 information = pd.read_csv("Data\TrainToBangkokDATA.csv", index_col="Station")
@@ -63,7 +64,7 @@ def shortestpath(start):
                     stationpathstorage.shortest[i][0] = (ConnectStationData.connect[check][i]) + base
                     stationpathstorage.shortest[i][1] = check
         already.add(check)
-        if stationpathstorage.shortest == storage and len(already) == 21:
+        if stationpathstorage.shortest == storage and len(already) == len(ConnectStationData.connect):
             break
         else:
             check = tocheck.pop(0)
@@ -84,4 +85,5 @@ def main():
         start = "start"
     shortestpath(start)
     print(stationpathstorage.shortest)
+    print(time.process_time())
 main()
