@@ -13,10 +13,9 @@ header{
 }
 
 body{
-    max-width: 3000px;
     background-position: center;
     background-size: cover;
-    height: 109vh;
+    /* height: 109vh; */
     background-image: url(../static/service1.jpg);
 }
 
@@ -56,9 +55,9 @@ ul li.active a{
 
 
 .heado {
+    font-size: 250%;
     margin: auto;
-    width: 640px; 
-    padding: 50px;
+    padding: 150px 100px;
     font-family: 'Lexend Deca', sans-serif; 
     color: #2E475D;  ;
 
@@ -66,4 +65,12 @@ ul li.active a{
 
 header{
     height: 50vh;
+}
+
+section{
+    position: relative;
+    bottom: 0%; left: 0; right: 0;
+    padding: 0 0 10%;
+    z-index: 1000;
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0));
 }
