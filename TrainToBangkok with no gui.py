@@ -62,7 +62,6 @@ def shortestpath(start):
                 if (ConnectStationData.connect[check][i] + base) < stationpathstorage.shortest[i][0]:
                     stationpathstorage.shortest[i][0] = (ConnectStationData.connect[check][i]) + base
                     stationpathstorage.shortest[i][1] = check
-                print((ConnectStationData.connect[check][i] + base))
         already.add(check)
         if stationpathstorage.shortest == storage and len(already) == len(ConnectStationData.connect):
             break
