@@ -62,6 +62,7 @@ def shortestpath(start):
                 if (ConnectStationData.connect[check][i] + base) < stationpathstorage.shortest[i][0]:
                     stationpathstorage.shortest[i][0] = (ConnectStationData.connect[check][i]) + base
                     stationpathstorage.shortest[i][1] = check
+                print((ConnectStationData.connect[check][i] + base))
         already.add(check)
         if stationpathstorage.shortest == storage and len(already) == len(ConnectStationData.connect):
             break
@@ -83,15 +84,16 @@ def findpath(start, end):
 def main():
     currentstation = input("ตอนนี้คุณอยู่ที่สถานี : ")
     wantstation = input("คุณอยากไปที่สถานี : ")
-    start = "start"
-    end = "end"
-    if "," in information.loc[currentstation]["Station ID"]:
-        start = information.loc[currentstation]["Station ID"]
-    if "," in information.loc[wantstation]["Station ID"]:
+    start = information.loc[currentstation]["Station ID"]
+    end = information.loc[wantstation]["Station ID"]
+    if "," not in information.loc[currentstation]["Station ID"]:
+        start = "start"
         setupstation(currentstation, "start")
-        end = information.loc[wantstation]["Station ID"]
-    else:
-        setupstation(currentstation, "start")
+    elif "," in information.loc[currentstation]["Station ID"]:
+        stationpathstorage.shortest[start][0] = 0
+        stationpathstorage.shortest[start][1] = start
+    if "," not in information.loc[wantstation]["Station ID"]:
+        end = "end"
         setupstation(wantstation, "end")
     shortestpath(start)
     findpath(start, end)
