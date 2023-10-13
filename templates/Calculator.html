@@ -16,29 +16,33 @@
                 <li><a href="Index.html">Home</a></li>
                 <li><a href="Map.html">Map</a></li>
                 <li class="active"><a href="#Calculator">Calculator</a></li>
-                <li><a href="#Service">Service</a></li>
+                <li><a href="Service.html">Service</a></li>
             </ul>
         </div>
     </header>
 
-    <div class="wrapper">
-        <!-- ปุ่มที่ให้กดเพื่อเลือก -->
-        <h1>Fares</h1>
-        <div class="select-btn">
-            <span>Select</span>
-            <i class="uil uil-angle-down"></i>
-        </div>
-        <div class="content">
-            <div class="search">
-                <!-- ช่อง search -->
-                <i class="uil uil-search"></i>
-                <input spellcheck="false" type="text" placeholder="Search">
-            </div>
-            <ul class="options">
-            <!-- ด้านใน dropdown -->
+    <nav>
+        <h1>BTS Route Map</h1>
+        <label for="lines">Select a BTS Line:</label>
+        <select id="lines" name="lines">
+            <option value="silom">Silom Line</option>
+            <option value="sukhumvit">Sukhumvit Line</option>
+            <option value="gold">Gold Line</option>
+        </select>
+        <br>
+        <div id="stations-container">
+            <br>
+            <h2>Stations:</h2>
+            <ul id="stations-list">
             </ul>
         </div>
-    </div>
+        <label for="stations">Select a Station:</label>
+        <select id="stations" name="stations">
+            <option value="station1">Station 1</option>
+            <option value="station2">Station 2</option>
+            <option value="station3">Station 3</option>
+        </select>
+    </nav>
 
     <script src="Calculator.js"></script>
 
