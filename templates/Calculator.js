@@ -47,11 +47,42 @@ document.getElementById('lines').addEventListener('change', function () {
 
     // Add stations dynamically based on the selected line
     if (selectedLine === "Green Line (Sukhumvit Line)") {
-        populateStations(stationsSelect, ['Station A', 'Station B', 'Station C']);
-    } else if (selectedLine === 'sukhumvit') {
-        populateStations(stationsSelect, ['Station X', 'Station Y', 'Station Z']);
-    } else if (selectedLine === 'gold') {
-        populateStations(stationsSelect, ['Gold Station 1', 'Gold Station 2']);
+        populateStations(stationsSelect, 
+        ['คูคต', 'แยก คปอ', 'พิพิธภัณฑ์กองทัพอากาศ', 'โรงพยาบาลภูมิพลอดุลยเดช', 
+        'สะพานใหม่', 'สายหยุด', 'พหลโยธิน 59', 'วัดพระศรีมหาธาตุ', 'กรมทหารราบที่ 11', 
+        'บางบัว', 'กรมป่าไม้', 'มหาวิทยาลัยเกษตรศาสตร์', 'เสนานิคม', 'รัชโยธิน', 'พหลโยธิน 24', 
+        'ห้าแยกลาดพร้าว', 'หมอชิต', 'สะพานควาย', 'เสนาร่วม', 'อารีย์', 'สนามเป้า', 'อนุสาวรีย์ชัยสมรภูมิ', 
+        'พญาไทย', 'ราชเทวี', 'สยาม', 'ชิดลม', 'เพลินจิต', 'นานา', 'อโศก', 'พร้อมพงษ์', 'ทองหล่อ', 
+        'เอกมัย', 'พระโขนง', 'อ่อนนุช', 'บางจาก', 'ปุณณวิถี', 'อุดมสุข', 'บางนา', 'แบริ่ง', 'สำโรง', 
+        'ปู่เจ้า', 'ช้างเอราวัณ', 'โรงเรียนนายเรือ', 'ปากน้ำ', 'ศรีนครินทร์', 'แพรกษา', 'สายลวด', 'เคหะฯ']);
+    } else if (selectedLine === 'Green Line (Silom Line)') {
+        populateStations(stationsSelect, 
+        ['บางหว้า สายฟ้า', 'วุฒากาศ', 'ตลาดพลู', 'โพธิ์นิมิตร', 'วงเวียนใหญ่', 'กรุงธนบุรี', 'สะพานตากสิน', 
+        'สุรศักดิ์', 'เซนต์หลุยส์', 'ช่องนนทรี', 'ศาลาแดง', 'ราชดำริ', 'สยาม', 'สนามกีฬาแห่งชาติ']);
+    } else if (selectedLine === 'Pink Line') {
+        populateStations(stationsSelect,
+        ['ศูนย์ราชการนนทบุรี', 'แคราย', 'สนามบินน้ำ', 'สามัคคี', 'กรมชลประทาน', 'แยกปากเกร็ด', 'เลี่ยงเมืองปากเกร็ด', 
+        'แจ้งวัฒนะปากเกร็ด 28', 'เมืองทองธานี', 'แจ้งวัฒนะ 14', 'ศูนย์ราชการเฉลิมพระเกียรติ', 'โทรคมนาคม', 'หลักสี่', 
+        'ราชภัฎพระนครเหนือ', 'วัดพระศรีมหาธาตุ', 'รามอินทรา 3', 'ลาดปลาเค้า', 'รามอินทรา กม.4', 'มัยลาภ', 'วัชรพล', 
+        'รามอินทรา กม.6', 'คู้บอน', 'รามอินทรา กม.9', 'วงแหวนรามอินทรา', 'นพรัตน์', 'บางชัน', 'เศรษบุตรบำเพ็ญ', 
+        'ตลาดมีนบุรี', 'มีนบุรี']);
+    } else if (selectedLine === 'Yellow Line') {
+        populateStations(stationsSelect,
+        ['ลาดพร้าว', 'ภาวนา', 'โชคชัย 4', 'ลาดพร้าว 71', 'ลาดพร้าว 83', 'มหาดไทย', 'ลาดพร้าว 101', 'บางกะปิ', 
+        'แยกลำสาลี', 'ศรีกรีฑา', 'หัวหมาก', 'กลันตัน', 'ศรีนุช', 'ศรีนครินทร์ 38', 'สวนหลวง ร.9', 'ศรีอุดม', 'ศรีเอี่ยม', 
+        'ศรีลาซาล', 'ศรีแบริ่ง', 'ศรีด่าน', 'ศรีเทพา', 'ทัพวัล', 'สำโรง']);
+    } else if (selectedLine === 'Gold Line') {
+        populateStations(stationsSelect,
+        ['คลองสาน','เจริญนคร','กรุงธนบุรี']);
+    } else if (selectedLine === 'Gold Line') {
+        populateStations(stationsSelect,
+        ['คลองสาน','เจริญนคร','กรุงธนบุรี']);
+    } else if (selectedLine === 'Gold Line') {
+        populateStations(stationsSelect,
+        ['คลองสาน','เจริญนคร','กรุงธนบุรี']);
+    } else if (selectedLine === 'Gold Line') {
+        populateStations(stationsSelect,
+        ['คลองสาน','เจริญนคร','กรุงธนบุรี']);
     } else {
         hideStations();
     }
