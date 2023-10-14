@@ -56,9 +56,15 @@ body{
 }
 
 nav{
-  position: fixed;
-  padding: 20% 0 0 40%;
-
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  background-color: #000000;
+  padding: 1%;
+  border-radius: 2%;
+}
+.depart{
+  text-align: center;
 }
 h1 {
   color: #ffffff;
