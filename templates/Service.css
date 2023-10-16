@@ -53,14 +53,12 @@ ul li.active a{
     height: auto;
 }
 
-
 .heado {
     font-size: 250%;
     margin: auto;
     padding: 150px 100px;
-    font-family: 'Lexend Deca', sans-serif; 
-    color: #2E475D;  ;
-
+    font-family: 'Lexend Deca', sans-serif;
+    color: #2E475D;
 }
 
 header{
