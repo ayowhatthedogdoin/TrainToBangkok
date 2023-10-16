@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
@@ -8,12 +9,80 @@ header{
     position: fixed;
     padding: 1rem 2%;
     top: 0; left: 0; right: 0;
-    z-index: 1000;
+    z-index: 1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.524),rgba(0, 0, 0, 0));
 }
 
+
+header{
+    height: 60vh;
+}
+
+#accordion{
+    z-index: 2;
+    align-items: center;
+    top: 50;
+    margin: 100px;
+    width: 600px;
+    position: relative;
+}
+
+.huakor{
+    width: 1000px;
+    text-align: center;
+    transform: translateY(120%);
+}
+
+.huakor h1{
+    font-size: 90px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: rgb(65, 238, 203);
+}
+
+#accordion li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10;
+    background-color: rgba(255, 197, 197, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#accordion li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(70, 136, 136);
+}
+#accordion li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: black;
+}
+#accordion label + input[type="radio"]{
+    display: none;
+}
+
+#accordion .content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion label + input[type="radio"]:checked + .content{
+    max-height: 400px;
+}
+
 body{
-    background-position: center;
+    background-position: flex;
     background-size: cover;
     /* height: 109vh; */
     background-image: url(../static/service1.jpg);
@@ -55,22 +124,9 @@ ul li.active a{
 
 
 .heado {
-    font-size: 250%;
     margin: auto;
     padding: 150px 100px;
+    font-size: 250%;
     font-family: 'Lexend Deca', sans-serif; 
     color: #2E475D;  ;
-
-}
-
-header{
-    height: 50vh;
-}
-
-section{
-    position: relative;
-    bottom: 0%; left: 0; right: 0;
-    padding: 0 0 10%;
-    z-index: 1000;
-    background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0));
 }
