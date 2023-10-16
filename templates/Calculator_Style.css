@@ -60,7 +60,7 @@ nav{
   top: 20%;
   left: 35%;
   background-color: #000000ca;
-  padding: 1%;
+  padding: 1.4%;
   border-radius: 2%;
 }
 .depart, .destination{
@@ -92,6 +92,8 @@ select {
 
 #stations-list li {
   margin: 5px 0;
+  max-height: 130px;
+  overflow-y: auto;
 }
 
 button{
@@ -114,4 +116,53 @@ button:hover{
 button.active{
   background-color: #ff0000;
   color: #ffffff;
+}
+
+label[for="lines"] {
+  font-weight: bold;
+}
+
+#lines , #lines_2{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#stations-container {
+  margin-top: 2px;
+}
+
+#stations-list {
+  list-style: none;
+  padding: 0;
+}
+
+label[for="stations"] {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+#stations ,#stations_2{
+  width: 60%;
+  padding: 5.8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+option[value='0']{
+  display: none;
+}
+
+#stationSearch ,#stationSearch_2{
+  width: 40%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#stationSearch:focus ,#stationSearch_2:focus{
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }

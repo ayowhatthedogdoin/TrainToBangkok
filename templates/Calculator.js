@@ -125,3 +125,34 @@ function populateStations(select, stationNames) {
 
     document.getElementById('stations-container').style.display = 'block';
 }
+
+const stationSearch = document.getElementById('stationSearch');
+const stationsSelect = document.getElementById('stations');
+
+stationSearch.addEventListener('input', () => {
+    const searchTerm = stationSearch.value.toLowerCase();
+
+    Array.from(stationsSelect.options).forEach(option => {
+        if (option.value.toLowerCase().includes(searchTerm)) {
+            option.style.display = 'block';
+        } else {
+            option.style.display = 'none';
+        }
+    });
+});
+
+const stationSearch_2 = document.getElementById('stationSearch_2');
+const stationsSelect_2 = document.getElementById('stations_2');
+
+stationSearch_2.addEventListener('input', () => {
+    const searchTerm_2 = stationSearch_2.value.toLowerCase();
+
+    Array.from(stationsSelect_2.options).forEach(option => {
+        if (option.value.toLowerCase().includes(searchTerm_2)) {
+            option.style.display = 'block';
+        } else {
+            option.style.display = 'none';
+        }
+    });
+});
+
