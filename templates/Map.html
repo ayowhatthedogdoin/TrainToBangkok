@@ -9,23 +9,35 @@
 
 <body>
     <header>
-        <div class="main">
+        <div class="nav-wraper">
             <div class="logo">
                 <img src="../static/logo.png">
             </div>
-            <ul>
+            <ul class="menu" id="mymenu">
                 <li><a href="Index.html">Home</a></li>
                 <li class="active"><a href="#Map">Map</a></li>
                 <li><a href="Calculator.html">Calculator</a></li>
                 <li><a href="Service.html">Service</a></li>
             </ul>
+            <div class="ham-menu" onclick="ham_func(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Index.html">Home</a>
+                <a href="#" class="sideactive">Map</a>
+                <a href="Calculator.html">Calculator</a>
+                <a href="Service.html">Service</a>
+            </div>
         </div>
     </header>
 
-    <section class="home" id="home">
+    <section class="home">
         <!-- รูปภาพ -->
-        <div class="content">
-            <img src="../static/Map.jpg" class="map">
+        <div id="magnifying_area">
+            <img src="../static/Map.jpg" class="map" id="magnifying_img">
         </div>
     </section>
 
@@ -39,6 +51,8 @@
     </div>
     </footer>
 
-</body>
+    <script src="Hamburger_menu.js"></script>
+    <script src="Map.js"></script>
 
+</body>
 </html>
