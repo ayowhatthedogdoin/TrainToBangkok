@@ -87,7 +87,7 @@ body{
     background-position: center;
     background-size: cover;
     height: 109vh;
-    background-image: url(../static/service1.jpg);
+    background-image: url(../images/service1.jpg);
 }
 
 .menu{

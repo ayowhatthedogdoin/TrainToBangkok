@@ -5,29 +5,26 @@
     font-size: 1rem;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-image: url(../static/background_map.jpg);
-    background-size: cover;
-    background-position: center;
+html{
+    font-size: calc(60% + 0.8vmin);
 }
 
 section{
-    padding: 12rem;
+    padding: 2rem 9%;
 }
 
+
 header{
-    position: absolute;
+    position: fixed;
     top: 0; left: 0; right: 0;
     padding: 1rem 2%;
     z-index: 1000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.524),rgba(0, 0, 0, 0));
+    height: 66px;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.524),rgba(0, 0, 0, 0));
 }
 
+
 .menu{
-    position: flex;
     float: right;
     list-style-type: none;
     margin-top: 25px;
@@ -62,38 +59,6 @@ header{
     height: auto;
 }
 
-#magnifying_area{
-    width: 40rem;
-    height: 40rem;
-    overflow: hidden;
-    border: 3px solid #333;
-    position: relative;
-}
-
-#magnifying_img{
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    pointer-events: none;
-}
-
-footer{
-  position: absolute;
-  bottom: -40%;
-  width: 100%;
-  background-color: #333;
-}
-
-.text{
-    font-size: 20;
-    color: #ffffff;
-    margin: 3%;
-    text-align: left;
-}
-
 .ham-menu {
     cursor: pointer;
     display: none;
@@ -120,6 +85,73 @@ footer{
 transform: translate(0, -11px) rotate(45deg);
 }
 
+.btn{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    top: 68%;
+    left: 0%;
+    border: 1px solid #000000;
+    padding: 10px 30px;
+    color: #000000;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: #ff0000;
+    border: 1px solid #00000000;
+    color: #ffffff;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+    margin: auto;
+}
+
+.home .content h3{
+    font-size: 50px;
+    color: #000000;
+    stroke-width: 100%;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00000010;
+    text-shadow: #ffffff;
+}
+
+.home .content p{
+    font-size: 20;
+    color: #000000;
+    padding: 2px 0px 12px;
+    text-align: left;
+    line-height: 1.5;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0000002e;
+}
+
+footer{
+    position: absolute;
+    bottom: -21.5%;
+    width: 100%;
+    background-color: #333;
+}
+
+.text{
+    font-size: 20;
+    color: #ffffff;
+    margin: 3%;
+    text-align: left;
+}
 
 .sidenav {
     height: 100%;
@@ -161,9 +193,6 @@ a.sideactive{
 
 
 @media only screen and (max-width: 768px) {
-    header{
-        position: absolute;
-    }
     .menu li{
         display: none;
         height: auto;
@@ -175,42 +204,14 @@ a.sideactive{
         list-style-type: none;
         margin-top: 25px;
     }
-    footer{
-        position: absolute;
-        bottom: -38%;
-        background-color: #333;
-    }
-}
-
-@media only screen and (max-width: 670px) {
     header{
-        position: absolute;
-    }
-    section{
-        padding: 0rem;
-    }
-
-    #magnifying_area{
-        width: 31rem;
-        height: 35.5rem;
-        overflow: hidden;
-        border: 3px solid #333;
-        position: relative;
-        margin-top: 12rem;
-    }
-    
-    #magnifying_img{
-        max-width: 115%;
-        max-height: 100%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        pointer-events: none;
+        position: fixed;
+        
     }
     footer{
         position: absolute;
-        bottom: -15%;
+        bottom: -11.5%;
+        width: 100%;
         background-color: #333;
     }
 }

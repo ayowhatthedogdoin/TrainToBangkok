@@ -3,7 +3,7 @@
     <title>TrainToBangkok</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Index_Style.css">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Index_Style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -12,14 +12,14 @@
         <!-- ส่วนบนตั้งแต่โลโก้ ไปจนถึง 4 ปุ่มด้านขวาบน -->
         <div class="nav-wraper">
             <div class="logo">
-                <img src="../static/logo.png">
+                <img src="../static/images/logo.png">
             </div>
             <ul class="menu" id="mymenu">
                 <!-- ปุ่มกดไปหน้าต่าง ๆ -->
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="Map.html">Map</a></li>
-                <li><a href="Calculator.html">Calculator</a></li>
-                <li><a href="Service.html">Service</a></li>
+                <li><a href="{{url_for('map')}}">Map</a></li>
+                <li><a href="{{url_for('calculator')}}">Calculator</a></li>
+                <li><a href="{{url_for('service')}}">Service</a></li>
             </ul>
             <!-- ทำ hamburger menu จะแสดงตอนหน้าจอเล็กกว่า 768px -->
             <div class="ham-menu" onclick="ham_func(this)">
@@ -31,9 +31,9 @@
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#" class="sideactive">Home</a>
-                <a href="Map.html">Map</a>
-                <a href="Calculator.html">Calculator</a>
-                <a href="Service.html">Service</a>
+                <a href="{{url_for('map')}}">Map</a>
+                <a href="{{url_for('calculator')}}">Calculator</a>
+                <a href="{{url_for('service')}}">Service</a>
             </div>
         </div>
     </header>
@@ -49,7 +49,7 @@
                 <p>Let us help you calculate fares from origin to destination.
                     <br>For your greatest convenience.
                 </p>
-                <a href="Calculator.html" class="btn">Calculator</a>
+                <a href="{{url_for('calculator')}}" class="btn">Calculator</a>
                 <!-- ปุ่มไปหน้า calculator เท่ ๆ -->
             </div>
         </div>
@@ -67,7 +67,7 @@
     </div>
     </footer>
 
-    <script src="Hamburger_menu.js"></script>
+    <script src="{{url_for('static', filename='scripts/Hamburger_menu.js')}}"></script>
 
 </body>
 </html>

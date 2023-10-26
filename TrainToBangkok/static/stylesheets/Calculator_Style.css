@@ -16,7 +16,7 @@ header{
 
 body{
     max-width: 3000px;
-    background-image: url(../static/test02.jpg);
+    background-image: url(../images/test02.jpg);
     background-position: center;
     background-size: cover;
     height: 109vh;
@@ -98,7 +98,7 @@ select {
   overflow-y: auto;
 }
 
-button{
+#button{
   position: relative;
   left: 31%;
   text-decoration: none;
@@ -109,7 +109,7 @@ button{
   font-size: 25;
 }
 
-button:hover{
+#button:hover{
   background-color: #ff0000;
   color: #ffffff;
   cursor: pointer;

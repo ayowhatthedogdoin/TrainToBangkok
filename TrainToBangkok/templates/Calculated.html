@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>TrainToBangkok - Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/stylesheets/Calculator_Style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-wraper">
+            <div class="logo">
+                <img src="../static/images/logo.png">
+            </div>
+            <ul class="menu" id="mymenu">
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('map')}}">Map</a></li>
+                <li class="active"><a href="#">Calculator</a></li>
+                <li><a href="{{url_for('service')}}">Service</a></li>
+            </ul>
+            <div class="ham-menu" onclick="ham_func(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="{{url_for('index')}}">Home</a>
+                <a href="{{url_for('map')}}">Map</a>
+                <a href="#" class="sideactive">Calculator</a>
+                <a href="{{url_for('service')}}">Service</a>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        {% for i in station %}
+            <p class="text">{{i}}</p>
+        {% endfor %}
+    </nav>
+
+    <footer>
+    <div class="footer">
+        <div class="text">
+            <h3>Contact</h3>
+            <p><i class="fa fa-phone" aria-hidden="true"></i><span style="color: red;"> Phone : </span>098-618-8936</p>
+            <p><i class="fa fa-envelope-o" aria-hidden="true"></i><span style="color: red;"> Email : </span>66070322@kmitl.ac.th</p>
+        </div>
+    </div>
+    </footer>
+
+    <script src="{{url_for('static', filename='scripts/Calculator.js')}}"></script>
+    <script src="{{url_for('static', filename='scripts/Hamburger_menu.js')}}"></script>
+
+</body>
+</html>
