@@ -2,16 +2,18 @@
 import pandas as pd
 from copy import deepcopy
 from math import inf
-from Data import ConnectStationData, stationpathstorage, Connectline
+from .ConnectStationData import *
+from .stationpathstorage import *
+from .Connectline import *
 
 #เก็บข้อมูล
-information = pd.read_csv("TrainToBangkok\Data\TrainToBangkokDATA.csv", index_col="Station")
-informationID = pd.read_csv("TrainToBangkok\Data\TrainToBangkokDATA.csv", index_col="Station ID")
+information = pd.read_csv("TrainToBangkok\TrainToBangkokDATA.csv", index_col="Station")
+informationID = pd.read_csv("TrainToBangkok\TrainToBangkokDATA.csv", index_col="Station ID")
 
 #หาสถานีเชื่อมที่ใกล้ที่สุด
 def startstop(currentstation, word, connect):
     stationnow = information.loc[currentstation]["Station ID"]
-    linecan = Connectline.line[information.loc[currentstation]["Colorline"]]
+    linecan = line[information.loc[currentstation]["Colorline"]]
 
     checkline = (stationnow.split())[0] #ใช้สร้างตัวเชคสีสาย
     checknum = (stationnow.split())[1]
@@ -94,8 +96,8 @@ def findpath(start, end, connect, shortest):
 
 #เชื่อมต่อ function ต่างๆเข้าด้วยกัน
 def searchpath(currentstation, wantstation):
-    connect = deepcopy(ConnectStationData.connect)
-    shortest = deepcopy(stationpathstorage.shortest)
+    connect = deepcopy(storageconnect)
+    shortest = deepcopy(storageshortest)
     
     start = information.loc[currentstation]["Station ID"]
     end = information.loc[wantstation]["Station ID"]

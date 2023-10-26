@@ -1,4 +1,4 @@
-connect = {
+storageconnect = {
     "PURPLE 11,PINK 1" : {
         "PURPLE 15,RED 5" : (4, 'purple'),
         "RED 11,PINK 13" : (13, 'pink')

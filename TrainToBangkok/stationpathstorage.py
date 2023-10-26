@@ -1,7 +1,7 @@
 #file ใช้สร้างตัวเก็บข้อมูลเอาไว้หาทางที่สั้นที่สุด
 from math import inf
 
-shortest = {
+storageshortest = {
     "PURPLE 11,PINK 1" : [inf, ""],
     "RED 11,PINK 13" : [inf, ""],
     "GREEN 8,PINK 15" : [inf, ""],
