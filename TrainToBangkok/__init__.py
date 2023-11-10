@@ -18,7 +18,7 @@ def createweb():
         if request.method == 'POST':
             current, want = request.form['stations'], request.form['stations2']
             session['current'], session['want'] = current, want
-            if current != "stations1" and want != 'stations1':
+            if current != "stations1" and want != 'stations1' and current != want:
                 return redirect(url_for('calculated'))
             else:
                 return render_template('Calculator.html')
@@ -31,7 +31,11 @@ def createweb():
             current = session.pop('current')
             want = session.pop('want')
             station = searchpath(currentstation=current, wantstation=want)
-            return render_template('Calculated.html', station=station)
+
+            total = 0
+            for i in station:
+                total += i[2]
+            return render_template('Calculated.html', station=station, total=total)
         else:
             return redirect(url_for('calculator'))
 

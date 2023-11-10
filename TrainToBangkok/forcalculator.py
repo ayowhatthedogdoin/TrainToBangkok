@@ -7,8 +7,8 @@ from .stationpathstorage import *
 from .Connectline import *
 
 #เก็บข้อมูล
-information = pd.read_csv("TrainToBangkok\TrainToBangkokDATA.csv", index_col="Station")
-informationID = pd.read_csv("TrainToBangkok\TrainToBangkokDATA.csv", index_col="Station ID")
+information = pd.read_csv("TrainToBangkok\TrainToBangkok\TrainToBangkokDATA.csv", index_col="Station")
+informationID = pd.read_csv("TrainToBangkok\TrainToBangkok\TrainToBangkokDATA.csv", index_col="Station ID")
 
 #หาสถานีเชื่อมที่ใกล้ที่สุด
 def startstop(currentstation, word, connect):

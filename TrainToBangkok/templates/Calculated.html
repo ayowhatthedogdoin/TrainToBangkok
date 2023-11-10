@@ -34,10 +34,23 @@
         </div>
     </header>
     
-    <nav>
+    <nav class="last">
+        <div class="heads">
+            <h1>Routes</h1>
+            <br>
+            <h3>Departure</h3>
+            <p>{{station[0][0]}}</p>
+            <br>
+            <h3>Destination</h3>
+            <p>{{station[-1][-1]}}</p>
+            <br>
+        </div>
+        <h3>change station at</h3>
         {% for i in station %}
-            <p class="text">{{i}}</p>
+            <p>เดินทางด้วยสาย <span style="color: rgb(255, 255, 255);"><b>{{i[1]}}</b></span> จนถึงสถานี <span  style="color: rgb(255, 255, 255);"><b>{{i[-1]}}</b></span></p>
         {% endfor %}
+        <br>
+        <h4><b>passed {{total}} station</b></h4>
     </nav>
 
     <footer>
