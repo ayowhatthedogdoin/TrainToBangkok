@@ -38,29 +38,19 @@ BLUE 36,สามยอด,blue
 BLUE 37,สนามไชย,blue
 BLUE 38,อิสรภาพ,blue
 LIGHTB 2,วุฒากาศ,lightblue
-"LIGHTB 3,LITTLEY 1","ตลาดพลู,ราชพฤกษ์","lightblue,littleyellow"
+LIGHTB 3,ตลาดพลู,lightblue
 LIGHTB 4,โพธิ์นิมิตร,lightblue
 LIGHTB 5,วงเวียนใหญ่,lightblue
 "LIGHTB 6,ORANGE 3",กรุงธนบุรี,"lightblue,orange"
 LIGHTB 7,สะพานตากสิน,lightblue
 LIGHTB 8,สุรศักดิ์,lightblue
 LIGHTB 9,เซนต์หลุยส์,lightblue
-"LIGHTB 10,LITTLEY 12","ช่องนนทรี,สาทร","lightblue,littleyellow"
+LIGHTB 10,ช่องนนทรี,lightblue
 LIGHTB 12,ราชดำริ,lightblue
 "LIGHTB 13,GREEN 25",สยาม,"lightblue,green"
 LIGHTB 14,สนามกีฬาแห่งชาติ,lightblue
 ORANGE 1,คลองสาน,orange
 ORANGE 2,เจริญนคร,orange
-LITTLEY 2,สะพานพระราม 3,littleyellow
-LITTLEY 3,เจริญราษฎร์,littleyellow
-LITTLEY 4,สะพานพระราม 9,littleyellow
-LITTLEY 5,วัดดอกไม้,littleyellow
-LITTLEY 6,วัดปริวาส,littleyellow
-LITTLEY 7,วัดด่าน,littleyellow
-LITTLEY 8,นราราม 3,littleyellow
-LITTLEY 9,ถนนจันทน์,littleyellow
-LITTLEY 10,เทคนิคกรุงเทพ,littleyellow
-LITTLEY 11,อาคารสงเคราะห์,littleyellow
 PURPLE 1,คลองบางไผ่,purple
 PURPLE 2,ตลาดบางใหญ่,purple
 PURPLE 3,สามแยกบางใหญ่,purple
@@ -186,3 +176,13 @@ BLACK 4,รามคำแหง,black
 BLACK 6,บ้านทับช้าง,black
 BLACK 7,ลาดกระบัง,black
 BLACK 8,สุวรรณภูมิ,black
+BLUE 17,บางซี่อ,blue
+RED 6,สถานีกลางกรุงเทพอภิวัฒน์,red
+BLUE 20,พหลโยธิน,blue
+GREEN 16,ห้าแยกลาดพร้าว,green
+BLUE 27,เพชรบุรี,blue
+BLACK 3,มักกะสัน,black
+BLUE 28,สุขุมวิท,blue
+GREEN 29,อโศก,green
+BLUE 32,สีลม,blue
+LIGHTB 11,ศาลาแดง,lightb

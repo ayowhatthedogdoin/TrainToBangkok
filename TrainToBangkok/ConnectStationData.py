@@ -62,7 +62,7 @@ storageconnect = {
     "BLUE 5,LIGHTB 1": {
         "BLUE 16,PURPLE 16" : (11, 'blue'),
         "BLUE 32,LIGHTB 11" : (9, 'blue'),
-        "LIGHTB 3,LITTLEY 1" : (2, 'lightb')
+        "LIGHTB 6,ORANGE 3" : (5, 'lightb')
     },
 
     "BLUE 16,PURPLE 16": {
@@ -81,30 +81,18 @@ storageconnect = {
     "BLUE 32,LIGHTB 11" : {
         "BLUE 28,GREEN 29" : (4, 'blue'),
         "LIGHTB 13,GREEN 25" : (2, 'lightb'),
-        "LIGHTB 10,LITTLEY 12" : (1, 'lightb'),
+        "LIGHTB 6,ORANGE 3" : (5, 'lightb'),
         "BLUE 5,LIGHTB 1" : (9, 'blue')
     },
 
-    "LIGHTB 3,LITTLEY 1" : {
-        "BLUE 5,LIGHTB 1" : (2, 'lightb'),
-        "LIGHTB 6,ORANGE 3" : (3, 'lightb'),
-        "LIGHTB 10,LITTLEY 12" : (11, 'littley')
-    },
-
     "LIGHTB 6,ORANGE 3" : {
-        "LIGHTB 3,LITTLEY 1" : (3, 'lightb'),
-        "LIGHTB 10,LITTLEY 12" : (4, 'lightb')
-    },
-
-    "LIGHTB 10,LITTLEY 12": {
-        "LIGHTB 6,ORANGE 3" : (4, 'lightb'),
-        "LIGHTB 3,LITTLEY 1" : (11, 'littley'),
-        "BLUE 32,LIGHTB 11" : (1, 'lightb')
+        "BLUE 5,LIGHTB 1" : (5, 'lightb'),
+        "BLUE 32,LIGHTB 11" : (5, 'lightb')
     },
 
     "PURPLE 15,RED 5" : {
         "PURPLE 11,PINK 1" : (4, 'purple'),
-        "BLUE 16,PURPLE 16" : (7, 'purple'),
+        "BLUE 16,PURPLE 16" : (1, 'purple'),
         "BLUE 17,RED 6" : (1, 'red')
     },
 

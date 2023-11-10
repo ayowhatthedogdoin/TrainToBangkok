@@ -56,9 +56,9 @@ def shortestpath(start, connect, shortest):
         nextcheck = list(connect[check].keys())
         tocheck.extend(nextcheck)
         for i in nextcheck:
-                if (connect[check][i][0] + base) < shortest[i][0]:
-                    shortest[i][0] = (connect[check][i][0]) + base
-                    shortest[i][1] = check
+            if (connect[check][i][0] + base) < shortest[i][0]:
+                shortest[i][0] = (connect[check][i][0]) + base
+                shortest[i][1] = check
         already.add(check)
         if shortest == storage and len(already) == len(connect):
             break
@@ -78,50 +78,68 @@ def findpath(start, end, connect, shortest):
 
     line = list()
     first = passstation[0]
-    total = 0
     come = [0, connect[passstation[0]][passstation[1]][1]]
-    for i in range(len(passstation)-1):
-        going = connect[passstation[i]][passstation[i+1]]
-        if come[1] != going[1]:
-            total += come[0]
-            line.append((come[1], total, [first, passstation[i]]))
-            total = 0
-            first = passstation[i]
+    for i in range(1, len(passstation)):
+        back = connect[passstation[i]][passstation[i-1]]
+        if come[1] != back[1]:
+            line.append([first, come[1], passstation[i-1]])
+            first = passstation[i-1]
+        come = back
+    line.append([first, come[1], passstation[i]])
+
+    return line
+
+def inputvalue(currentstation, wantstation):
+    special = ('บางซี่อ', 'สถานีกลางกรุงเทพอภิวัฒน์', 'พหลโยธิน', 'ห้าแยกลาดพร้าว', 'เพชรบุรี', 'มักกะสัน', 'สุขุมวิท', 'อโศก', \
+               'สีลม', 'ศาลาแดง', 'ตลาดพลู', 'ราชพฤกษ์', 'ช่องนนทรี', 'สาทร')
+    for i in [currentstation, wantstation]:
+        if i in special:
+            check = 'BLUE 17,RED 6' if i == 'บางซี่อ' or i == 'สถานีกลางกรุงเทพอภิวัฒน์' else False
+            check = 'BLUE 20,GREEN 16' if i == 'พหลโยธิน' or i == 'ห้าแยกลาดพร้าว' else check
+            check = 'BLUE 27,BLACK 3' if i == 'เพชรบุรี' or i == 'มักกะสัน' else check
+            check = 'BLUE 28,GREEN 29' if i == 'สุขุมวิท' or i == 'อโศก' else check
+            check = 'BLUE 32,LIGHTB 11' if i == 'สีลม' or i == 'ศาลาแดง' else check
         else:
-            total += come[0]
-        come = going
-    total += come[0]
-    line.append((come[1], total, (first, passstation[-1])))
-    return line, passstation
+            check = information.loc[i]["Station ID"]
+        start = check if i == currentstation else start
+        end = check if i == wantstation else False
+    return start, end
+
+def outputval(station):
+    special = ('BLUE 17,RED 6', 'BLUE 20,GREEN 16', 'BLUE 27,BLACK 3', 'BLUE 28,GREEN 29', 'BLUE 32,LIGHTB 11')
+    for connect in station:
+        if connect[0] in special:
+            for i in connect[0].split(','):
+                if connect[1].upper() in i:
+                    station[station.index(connect)][0] = informationID.loc[i]["Station"]
+        else:
+            connect[0] = informationID.loc[connect[0]]["Station"]
+        if connect[2] in special:
+            for i in connect[2].split(','):
+                if connect[1].upper() in i:
+                    station[station.index(connect)][2] = informationID.loc[i]["Station"]
+        else:
+            connect[2] = informationID.loc[connect[2]]["Station"]
+    return station
 
 #เชื่อมต่อ function ต่างๆเข้าด้วยกัน
 def searchpath(currentstation, wantstation):
     connect = deepcopy(storageconnect)
     shortest = deepcopy(storageshortest)
     
-    start = information.loc[currentstation]["Station ID"]
-    end = information.loc[wantstation]["Station ID"]
+    start, end = inputvalue(currentstation, wantstation)
 
-    if "," not in information.loc[currentstation]["Station ID"]:
+    if "," not in start:
         start = information.loc[currentstation]["Station ID"]
         connect, shortest = setupstation(currentstation, wantstation, start, shortest, connect)
-    elif "," in information.loc[currentstation]["Station ID"]:
+    elif "," in start:
         shortest[start][0] = 0
         shortest[start][1] = start
-    if "," not in information.loc[wantstation]["Station ID"]:
+    if "," not in end:  
         end = information.loc[wantstation]["Station ID"]
         connect, shortest = setupstation(currentstation, wantstation, end, shortest, connect)
-
+    
     shortest = shortestpath(start, connect ,shortest)
-    station, check = findpath(start, end, connect, shortest)
-
-    """if information.loc[currentstation]["Colorline"] != information.loc[wantstation]["Colorline"] or len(check) > 3:
-        for i in station:
-            come = informationID.loc[i[-1][0]]["Station"]
-            go = informationID.loc[i[-1][1]]["Station"]
-            print(f"เดินทางจาก {come} ไปยัง {go} เป็นระยะทาง {i[1]} สถานี ด้วยสายสี {i[0]}")
-    else:
-        start = int((information.loc[currentstation]["Station ID"].split())[1])
-        end = int((information.loc[wantstation]["Station ID"].split())[1])
-        print(f'เดินทางจาก {currentstation} ไปยัง {wantstation} เป็นระยะทาง', abs(start-end), "สถานี")"""
+    station = findpath(start, end, connect, shortest)
+    station = outputval(station)
     return station

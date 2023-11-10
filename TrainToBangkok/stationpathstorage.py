@@ -16,9 +16,7 @@ storageshortest = {
     "BLUE 16,PURPLE 16": [inf, ""],
     "BLUE 17,RED 6": [inf, ""],
     "BLUE 32,LIGHTB 11" : [inf, ""], 
-    "LIGHTB 3,LITTLEY 1" : [inf, ""],
     "LIGHTB 6,ORANGE 3" : [inf, ""],
-    "LIGHTB 10,LITTLEY 12": [inf, ""],
     "PURPLE 15,RED 5" : [inf, ""],
     "LIGHTB 13,GREEN 25" : [inf, ""]
 }
