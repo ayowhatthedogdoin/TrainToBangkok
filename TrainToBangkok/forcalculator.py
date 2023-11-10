@@ -28,7 +28,7 @@ def startstop(currentstation, word, connect):
                 start.update({i:((abs(int(tod)-int(checknum))), information.loc[currentstation]["Colorline"])})
                 tod = ""
                 continue
-                
+
     connect.update({word:start})
 
     for i in linecan:
@@ -78,15 +78,20 @@ def findpath(start, end, connect, shortest):
 
     line = list()
     first = passstation[0]
+    total = 0
     come = [0, connect[passstation[0]][passstation[1]][1]]
     for i in range(1, len(passstation)):
         back = connect[passstation[i]][passstation[i-1]]
         if come[1] != back[1]:
-            line.append([first, come[1], passstation[i-1]])
+            total += come[0]
+            line.append([first, come[1], total, passstation[i-1]])
+            total = 0
             first = passstation[i-1]
+        else:
+            total += come[0]
         come = back
-    line.append([first, come[1], passstation[i]])
-
+    total += come[0]
+    line.append([first, come[1], total, passstation[i]])
     return line
 
 def inputvalue(currentstation, wantstation):
@@ -114,12 +119,18 @@ def outputval(station):
                     station[station.index(connect)][0] = informationID.loc[i]["Station"]
         else:
             connect[0] = informationID.loc[connect[0]]["Station"]
-        if connect[2] in special:
-            for i in connect[2].split(','):
+        if connect[-1] in special:
+            for i in connect[-1].split(','):
                 if connect[1].upper() in i:
-                    station[station.index(connect)][2] = informationID.loc[i]["Station"]
+                    station[station.index(connect)][-1] = informationID.loc[i]["Station"]
         else:
-            connect[2] = informationID.loc[connect[2]]["Station"]
+            connect[-1] = informationID.loc[connect[-1]]["Station"]
+        
+        station[station.index(connect)][1] = 'sukhumvit' if station[station.index(connect)][1] == 'green' else station[station.index(connect)][1]
+        station[station.index(connect)][1] = 'silom' if station[station.index(connect)][1] == 'lightb' else station[station.index(connect)][1]
+        station[station.index(connect)][1] = 'gold' if station[station.index(connect)][1] == 'orange' else station[station.index(connect)][1]
+        station[station.index(connect)][1] = 'airportlink' if station[station.index(connect)][1] == 'black' else station[station.index(connect)][1]
+
     return station
 
 #เชื่อมต่อ function ต่างๆเข้าด้วยกัน
@@ -143,3 +154,4 @@ def searchpath(currentstation, wantstation):
     station = findpath(start, end, connect, shortest)
     station = outputval(station)
     return station
+

@@ -66,7 +66,7 @@ storageconnect = {
     },
 
     "BLUE 16,PURPLE 16": {
-        "PURPLE 15,RED 5": (7, 'purple'),
+        "PURPLE 15,RED 5": (1, 'purple'),
         "BLUE 17,RED 6": (1, 'blue'),
         "BLUE 5,LIGHTB 1": (11, 'blue')
     },
